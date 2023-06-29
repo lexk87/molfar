@@ -1,0 +1,18 @@
+.btn {
+    @include flex(center, center);
+    border: none;
+}
+
+.btn-small {
+    background-color: transparent;
+}
+
+.header__mob-btn {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+
+    @include min768 {
+        display: none;
+    }
+}

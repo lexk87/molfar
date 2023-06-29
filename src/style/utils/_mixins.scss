@@ -55,7 +55,7 @@
 
 // Флексбокс
 @mixin flex($jc: flex-start, $ai: flex-start, $fd: row) {
-    display: $df;
+    display: flex;
     flex-direction: $fd;
     justify-content: $jc;
     align-items: $ai;

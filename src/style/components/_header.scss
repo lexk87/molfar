@@ -1,0 +1,34 @@
+.app-header {
+    height: 80px;
+    box-shadow: $buttonShadow;
+}
+
+.header__logo {
+    width: auto;
+    height: 60px;
+}
+
+.header__contacts-list {
+    display: none;
+
+    @include min768 {
+        @include flex(null, center);
+        @include font(14px, 400);
+        gap: 30px;
+    }
+
+    @include min1200 {
+        @include font(18px, null);
+        gap: 40px;
+    }
+}
+
+.header__contacts-link {
+    padding: 30px 0;
+    color: $primaryTextColor;
+    transition: color 250ms $animate;
+
+    &:hover {
+        color: $accentColor;
+    }
+}
