@@ -1,3 +1,4 @@
+// Брейкпоінти
 @mixin min480 {
     @media screen and (min-width: 480px) {
         @content;
@@ -44,4 +45,18 @@
     @media screen and (max-width: 1599px) {
         @content;
     }
+}
+
+// Шрифт
+@mixin font($fs, $fw) {
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+// Флексбокс
+@mixin flex($jc: flex-start, $ai: flex-start, $fd: row) {
+    display: $df;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
 }
