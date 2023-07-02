@@ -10,9 +10,16 @@
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
+    transition: opacity 250ms $animate, visibility 250ms $animate;
 
     @include min768 {
         display: none;
+    }
+
+    &.mob-menu__backdrop--is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
     }
 }
 
@@ -24,6 +31,12 @@
     height: calc(100vh - 80px);
     background-color: $secondaryTextColor;
     padding: 30px 15px;
+    transform: translateX(0);
+    transition: transform 250ms $animate;
+
+    &.mob-menu__container--is-hidden {
+        transform: translateX(215px);
+    }
 }
 
 // Контакти мобільного меню
