@@ -8,6 +8,18 @@
     background-color: transparent;
 }
 
+.btn-big {
+    background-color: $accentColor;
+    color: $secondaryTextColor;
+    border-radius: 4px;
+    transition: box-shadow 250ms $animate;
+
+    &:hover,
+    &:focus {
+        box-shadow: $buttonShadow;
+    }
+}
+
 .header__mob-btn {
     width: 40px;
     height: 40px;
@@ -65,4 +77,25 @@
 .burger.open .burger__dash:nth-child(3) {
     top: 8px;
     transform: rotate(-135deg);
+}
+
+// Кнопка "Замовити"
+.order-btn {
+    padding: 10px;
+    width: calc((100% - 10px) / 2);
+    @include font(null, 700);
+
+    @include min768 {
+        padding: 15px;
+        width: calc((100% - 30px) / 2);
+        @include font(21px, null);
+    }
+
+    @include min1200 {
+        width: calc((100% - 60px) / 3);
+    }
+
+    @include min1600 {
+        @include font(24px, null);
+    }
 }

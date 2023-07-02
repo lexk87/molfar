@@ -1,0 +1,67 @@
+.app-footer {
+    background-color: $footerBg;
+}
+
+.footer__logo {
+    width: auto;
+    height: 60px;
+}
+
+.footer__contacts-list {
+    @include flex(center, center, column);
+    gap: 10px;
+}
+
+.footer__contacts-link {
+    color: $secondaryTextColor;
+    transition: color 250ms $animate;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.footer__messengers-cta,
+.footer__social-cta {
+    color: $secondaryTextColor;
+    margin-bottom: 5px;
+}
+
+.footer__messengers-list,
+.footer__social-list {
+    @include flex(center, center);
+    gap: 10px;
+}
+
+.footer__messengers-link {
+    @include flex(center, center);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    .footer__messengers-item:nth-child(1)>& {
+        background-color: #675DA9;
+    }
+
+    .footer__messengers-item:nth-child(2)>& {
+        background-color: #29A9EA;
+    }
+
+    .footer__messengers-item:nth-child(3)>& {
+        background-color: #0084FF;
+    }
+}
+
+.footer__messengers-img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__social-link {
+    @include flex(center, center);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3C5A9A;
+}

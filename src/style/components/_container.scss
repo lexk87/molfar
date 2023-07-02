@@ -24,3 +24,19 @@
     @include flex(space-between, center);
     height: 100%;
 }
+
+.footer__container {
+    @include flex(null, center, column);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 30px;
+
+    @include min768 {
+        flex-direction: row;
+    }
+
+    @include min1200 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}

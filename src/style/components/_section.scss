@@ -1,0 +1,50 @@
+.section {
+    padding-bottom: 60px;
+
+    @include min1200 {
+        padding-bottom: 100px;
+    }
+}
+
+.section__heading {
+    @include flex(center, center, column);
+    gap: 5px;
+    margin-bottom: 30px;
+
+    @include min1200 {
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+}
+
+.section__title {
+    font-family: "Montserrat";
+    @include font(24px, 500);
+
+    @include min768 {
+        @include font(28px, null);
+    }
+
+    @include min1200 {
+        @include font(36px, null);
+    }
+
+    @include min1600 {
+        @include font(42px, null);
+    }
+}
+
+.section__title-underline {
+    width: 80px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: $accentColor;
+
+    @include min1200 {
+        width: 100px;
+    }
+
+    @include min1600 {
+        width: 120px;
+    }
+}
