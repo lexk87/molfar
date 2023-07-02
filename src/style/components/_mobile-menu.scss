@@ -1,0 +1,83 @@
+.mob-menu__backdrop {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    @include glass;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+
+    @include min768 {
+        display: none;
+    }
+}
+
+.mob-menu__container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 215px;
+    height: calc(100vh - 80px);
+    background-color: $secondaryTextColor;
+    padding: 30px 15px;
+}
+
+// Контакти мобільного меню
+.mob-menu__contacts-list {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $grayScale;
+}
+
+.mob-menu__contacts-link {
+    display: block;
+    padding: 10px 15px;
+    color: $primaryTextColor;
+    transition: color 250ms $animate;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+// Заклик до дії
+.mob-menu__cta {
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+// Месенджери мобільного меню
+.mob-menu__messengers-list {
+    @include flex(null, center);
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.mob-menu__messengers-item:nth-child(1)>.mob-menu__messengers-link {
+    background-color: #675DA9;
+}
+
+.mob-menu__messengers-item:nth-child(2)>.mob-menu__messengers-link {
+    background-color: #29A9EA;
+}
+
+.mob-menu__messengers-item:nth-child(3)>.mob-menu__messengers-link {
+    background-color: #0084FF;
+}
+
+.mob-menu__messengers-link {
+    @include flex(center, center);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.mob-menu__messengers-img {
+    width: 20px;
+    height: 20px;
+}

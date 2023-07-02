@@ -22,7 +22,11 @@
             </a>
             <!-- Кнопка мобільного меню -->
             <button type="button" aria-label="Open mobile menu" class="btn btn-small header__mob-btn">
-                <img src="./img/burger-menu-btn.svg" alt="Відкрити меню" class="header__mob-btn-img" width="25">
+                <div class="burger">
+                    <span class="burger__dash"></span>
+                    <span class="burger__dash"></span>
+                    <span class="burger__dash"></span>
+                </div>
             </button>
 
             <!-- Контакти хедера -->
@@ -36,8 +40,67 @@
             </ul>
 
             <!-- Месенджери хедера -->
+            <ul class="header__messengers-list">
+                <li class="header__messengers-item">
+                    <a href="#" class="header__messengers-link" target="_blank" title="Viber">
+                        <img src="./img/viber-logo.svg" alt="Viber" class="header__messengers-img" width="20">
+                    </a>
+                </li>
+
+                <li class="header__messengers-item">
+                    <a href="#" class="header__messengers-link" target="_blank" title="Telegram">
+                        <img src="./img/telegram-logo.svg" alt="Telegram" class="header__messengers-img" width="20">
+                    </a>
+                </li>
+
+                <li class="header__messengers-item">
+                    <a href="#" class="header__messengers-link" target="_blank" title="Messenger">
+                        <img src="./img/fb-messenger-logo.svg" alt="Messenger" class="header__messengers-img" width="20">
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
+
+    <!-- Бокове мобільне меню -->
+    <div class="mob-menu__backdrop is-hidden">
+        <div class="mob-menu__container">
+
+            <!-- Контакти мобільного меню -->
+            <ul class="mob-menu__contacts-list">
+                <li class="mob-menu__contacts-item">
+                    <a href="tel:+380955775628" class="mob-menu__contacts-link">+38 (095) 577-56-28</a>
+                </li>
+                <li class="mob-menu__contacts-item">
+                    <a href="mailto:info@molfar.in" class="mob-menu__contacts-link">info@molfar.in</a>
+                </li>
+            </ul>
+
+            <!-- Заклик до дії -->
+            <p class="mob-menu__cta">Написати нам:</p>
+
+            <!-- Месенджери мобільного меню -->
+            <ul class="mob-menu__messengers-list">
+                <li class="mob-menu__messengers-item">
+                    <a href="#" class="mob-menu__messengers-link" target="_blank" title="Viber">
+                        <img src="./img/viber-logo.svg" alt="Viber" class="mob-menu__messengers-img" width="20">
+                    </a>
+                </li>
+            
+                <li class="mob-menu__messengers-item">
+                    <a href="#" class="mob-menu__messengers-link" target="_blank" title="Telegram">
+                        <img src="./img/telegram-logo.svg" alt="Telegram" class="mob-menu__messengers-img" width="20">
+                    </a>
+                </li>
+            
+                <li class="mob-menu__messengers-item">
+                    <a href="#" class="mob-menu__messengers-link" target="_blank" title="Messenger">
+                        <img src="./img/fb-messenger-logo.svg" alt="Messenger" class="mob-menu__messengers-img" width="20">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 </body>
 </html>

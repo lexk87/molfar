@@ -60,3 +60,9 @@
     justify-content: $jc;
     align-items: $ai;
 }
+
+// Ефект скла
+@mixin glass() {
+    backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.5);
+}

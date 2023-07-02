@@ -4,3 +4,4 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/700.css';
 import './index.html';
 import './index.scss';
+import './modules/burger-animation';

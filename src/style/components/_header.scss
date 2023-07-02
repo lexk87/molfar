@@ -1,19 +1,24 @@
+// Хедер
 .app-header {
+    position: relative;
+    z-index: 999;
     height: 80px;
     box-shadow: $buttonShadow;
 }
 
+// Логотип хедера
 .header__logo {
     width: auto;
     height: 60px;
 }
 
+// Контакти хедера
 .header__contacts-list {
     display: none;
 
     @include min768 {
         @include flex(null, center);
-        @include font(14px, 400);
+        @include font(16px, 400);
         gap: 30px;
     }
 
@@ -28,7 +33,57 @@
     color: $primaryTextColor;
     transition: color 250ms $animate;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $accentColor;
     }
+}
+
+// Месенджери хедера
+.header__messengers-list {
+    display: none;
+
+    @include min768 {
+        @include flex(null, center);
+        gap: 10px;
+    }
+}
+
+.header__messengers-link {
+    @include flex(center, center);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $grayScale;
+    transition: background-color 250ms $animate;
+
+    @include min1200 {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.header__messengers-img {
+    width: 20px;
+    height: 20px;
+
+    @include min1200 {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.header__messengers-item:nth-child(1)>.header__messengers-link:hover,
+.header__messengers-item:nth-child(1)>.header__messengers-link:focus {
+    background-color: #675DA9;
+}
+
+.header__messengers-item:nth-child(2)>.header__messengers-link:hover,
+.header__messengers-item:nth-child(2)>.header__messengers-link:focus {
+    background-color: #29A9EA;
+}
+
+.header__messengers-item:nth-child(3)>.header__messengers-link:hover,
+.header__messengers-item:nth-child(3)>.header__messengers-link:focus {
+    background-color: #0084FF;
 }
