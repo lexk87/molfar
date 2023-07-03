@@ -21,6 +21,10 @@
 }
 
 .header__mob-btn {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    z-index: 200;
     width: 40px;
     height: 40px;
     margin-left: 20px;
@@ -88,14 +92,11 @@
     @include min768 {
         padding: 15px;
         width: calc((100% - 30px) / 2);
-        @include font(21px, null);
+        @include font(18px, null);
     }
 
     @include min1200 {
-        width: calc((100% - 60px) / 3);
-    }
-
-    @include min1600 {
-        @include font(24px, null);
+        width: calc((100% - 100px) / 3);
+        @include font(21px, null);
     }
 }

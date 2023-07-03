@@ -1,7 +1,6 @@
 // Хедер
 .app-header {
     position: relative;
-    z-index: 200;
     height: 80px;
     box-shadow: $buttonShadow;
 }
@@ -18,13 +17,8 @@
 
     @include min768 {
         @include flex(null, center);
-        @include font(16px, 400);
-        gap: 30px;
-    }
-
-    @include min1200 {
-        @include font(18px, null);
-        gap: 40px;
+        @include font(18px, 500);
+        gap: 50px;
     }
 }
 
@@ -51,26 +45,16 @@
 
 .header__messengers-link {
     @include flex(center, center);
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: $grayScale;
     transition: background-color 250ms $animate;
-
-    @include min1200 {
-        width: 35px;
-        height: 35px;
-    }
 }
 
 .header__messengers-img {
-    width: 20px;
-    height: 20px;
-
-    @include min1200 {
-        width: 25px;
-        height: 25px;
-    }
+    width: 25px;
+    height: 25px;
 }
 
 .header__messengers-item:nth-child(1)>.header__messengers-link:hover,

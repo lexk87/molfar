@@ -9,6 +9,7 @@
     }
 
     @include min1200 {
+        gap: 50px;
         margin-bottom: 50px;
     }
 }
@@ -26,7 +27,7 @@
     }
 
     @include min1200 {
-        width: calc((100% - 60px) / 3);
+        width: calc((100% - 100px) / 3);
     }
 
     &:hover,
@@ -47,8 +48,8 @@
 
 .products__description {
     position: absolute;
-    @include flex(center, center);
-    @include font(14px, 300);
+    @include flex(center, null, column);
+    @include font(16px, 300);
     overflow: hidden;
     top: 0;
     left: 0;
@@ -60,23 +61,37 @@
     color: $secondaryTextColor;
     transition: transform 250ms $animate;
 
-    .products__item:hover &,
-    .products__item:focus & {
-        transform: translateY(0);
-    }
-
-    @include min480 {
-        @include font(16px, null);
-    }
-
     @include min768 {
         padding: 30px;
         @include font(18px, null);
     }
 
-    @include min1600 {
-        @include font(26px, null);
+    @include min1200 {
+        @include font(21px, null);
     }
+
+    .products__item:hover &,
+    .products__item:focus & {
+        transform: translateY(0);
+    }
+}
+
+.products__description-text {
+    margin-bottom: 10px;
+
+    @include min480 {
+        margin-bottom: 15px;
+    }
+
+    @include min1200 {
+        margin-bottom: 20px;
+    }
+}
+
+.products__description-link {
+    @include font(null, 500);
+    color: $secondaryTextColor;
+    text-decoration: underline;
 }
 
 .products__text-box {
@@ -88,29 +103,49 @@
 }
 
 .products__heading {
+    user-select: none;
     @include font(16px, 700);
     margin-bottom: 15px;
+    height: 37px;
 
     @include min768 {
         @include font(18px, null);
         margin-bottom: 20px;
+        height: 42px;
     }
 
-    @include min1600 {
-        @include font(28px, null);
+    @include min1200 {
+        @include font(21px, null);
+        height: 49px;
     }
 }
 
 .products__price {
-    @include font(21px, 700);
+    user-select: none;
+    margin-bottom: 2px;
+    @include font(18px, 700);
     color: $accentColor;
 
     @include min768 {
-        @include font(24px, null);
+        @include font(21px, null);
     }
 
-    @include min1600 {
-        @include font(32px, null);
+    @include min1200 {
+        @include font(24px, null);
+    }
+}
+
+.products__weight {
+    user-select: none;
+    @include font(14px, 500);
+    font-style: italic;
+
+    @include min768 {
+        @include font(16px, null);
+    }
+
+    @include min1200 {
+        @include font(18px, null);
     }
 }
 

@@ -17,12 +17,6 @@
     }
 }
 
-@mixin min1600 {
-    @media screen and (min-width: 1600px) {
-        @content;
-    }
-}
-
 @mixin max479 {
     @media screen and (max-width: 479px) {
         @content;
@@ -37,12 +31,6 @@
 
 @mixin max1199 {
     @media screen and (max-width: 1199px) {
-        @content;
-    }
-}
-
-@mixin max1599 {
-    @media screen and (max-width: 1599px) {
         @content;
     }
 }
@@ -63,6 +51,6 @@
 
 // Ефект скла
 @mixin glass() {
-    backdrop-filter: blur(4px) saturate(180%);
-    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.2);
 }
