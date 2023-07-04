@@ -1,0 +1,59 @@
+.delivery__list {
+    @include flex(null, null, column);
+    gap: 10px;
+
+    @include min480 {
+        gap: 30px;
+    }
+
+    @include min768 {
+        @include flex(null, null, row);
+    }
+
+    @include min1200 {
+        gap: 50px;
+    }
+}
+
+.delivery__item {
+    @include flex(null, null, column);
+    gap: 15px;
+    width: 100%;
+    background-color: #EDEDED;
+    padding: 15px;
+    border-radius: 4px;
+
+    @include min768 {
+        padding: 30px;
+        
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include min1200 {
+        width: calc((100% - 50px) / 2);
+    }
+}
+
+.delivery__subheading {
+    @include font(16px, 700);
+    
+    @include min768 {
+        @include font(18px, null);
+    }
+
+    @include min1200 {
+        @include font(21px, null);
+    }
+}
+
+.delivery__text {
+    @include font(16px, 300);
+
+    @include min768 {
+        @include font(18px, null);
+    }
+
+    @include min1200 {
+        @include font(21px, null);
+    }
+}
