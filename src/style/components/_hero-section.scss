@@ -1,0 +1,47 @@
+.hero {
+    background-image: url(../../img/hero-bg-6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 60px;
+    width: 100%;
+    height: 640px;
+    @include min1200 {
+        margin-bottom: 100px;
+        height: 900px;
+    }
+}
+
+.hero__container {
+    @include flex(flex-end, null);
+    height: 100%;
+}
+
+.hero__title {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    font-family: "Montserrat";
+    color: $secondaryTextColor;
+}
+
+.hero__title-string--big {
+    text-align: end;
+    @include font(42px, 700);
+
+    &:nth-child(2) {
+        margin-bottom: 10px;
+    }
+
+    @include min480 {
+        @include font(52px, null);
+    }
+
+    @include min768 {
+        @include font(64px, null);
+    }
+
+    @include min1200 {
+        @include font(84px, null);
+    }
+}
