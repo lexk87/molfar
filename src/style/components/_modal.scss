@@ -1,0 +1,72 @@
+.modal__backdrop {
+    display: block;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        @include glass;
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        transition: opacity 250ms $animate, visibility 250ms $animate;
+    
+        &.modal__backdrop--is-hidden {
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
+}
+
+.modal__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 45px 30px;
+    width: calc(100% - 30px);
+    max-width: 360px;
+    background-color: $secondaryTextColor;
+    border-radius: 4px;
+    transition: transform 250ms $animate;
+    box-shadow: $cardShadow;
+
+    &.modal__container--is-hidden {
+        transform: translate(-50%, -50%) scale(0.7);
+    }
+}
+
+.modal__text {
+    @include font(18px, null);
+    margin-bottom: 30px;
+}
+
+.modal__messengers-list {
+    @include flex(center, center);
+    gap: 10px;
+}
+
+.modal__messengers-item:nth-child(1)>.modal__messengers-link {
+    background-color: #675DA9;
+}
+
+.modal__messengers-item:nth-child(2)>.modal__messengers-link {
+    background-color: #29A9EA;
+}
+
+.modal__messengers-item:nth-child(3)>.modal__messengers-link {
+    background-color: #0084FF;
+}
+
+.modal__messengers-link {
+    @include flex(center, center);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.modal__messengers-img {
+    width: 25px;
+    height: 25px;
+}

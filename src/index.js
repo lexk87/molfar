@@ -6,3 +6,4 @@ import '@fontsource/roboto/700.css';
 import './index.html';
 import './index.scss';
 import './modules/mobile-menu';
+import './modules/modal';
