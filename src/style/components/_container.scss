@@ -28,7 +28,7 @@
     gap: 30px;
 
     @include min768 {
-        flex-direction: row;
+        @include flex(space-between, flex-start, row);
     }
 
     @include min1200 {

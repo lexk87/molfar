@@ -1,5 +1,6 @@
 .app-footer {
     background-color: $footerBg;
+    @include font(16px, 500);
 }
 
 .footer__logo {
@@ -10,6 +11,10 @@
 .footer__contacts-list {
     @include flex(center, center, column);
     gap: 10px;
+
+    @include min768 {
+        @include flex(flex-start, flex-start, column);
+    }
 }
 
 .footer__contacts-link {
@@ -22,10 +27,19 @@
     }
 }
 
+.footer__messengers-wrapper,
+.footer__social-wrapper {
+    @include flex(null, center, column);
+    gap: 10px;
+
+    @include min768 {
+        @include flex(flex-start, flex-start, column);
+    }
+}
+
 .footer__messengers-cta,
 .footer__social-cta {
     color: $secondaryTextColor;
-    margin-bottom: 5px;
 }
 
 .footer__messengers-list,
@@ -36,8 +50,8 @@
 
 .footer__messengers-link {
     @include flex(center, center);
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 
     .footer__messengers-item:nth-child(1)>& {
@@ -53,15 +67,16 @@
     }
 }
 
+.footer__messengers-img,
 .footer__messengers-img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .footer__social-link {
     @include flex(center, center);
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: #3C5A9A;
 }
