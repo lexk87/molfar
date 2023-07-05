@@ -11,14 +11,12 @@ const { orderBtnEl, backdropEl, modalEl, closeBtnEl, bodyEl } = refs;
 const openModal = () => {
     backdropEl.classList.remove('modal__backdrop--is-hidden');
     modalEl.classList.remove('modal__container--is-hidden');
-    // bodyEl.classList.add('scroll-lock');
     window.addEventListener('keydown', escClick);
 };
 
 const closeModal = () => {
     backdropEl.classList.add('modal__backdrop--is-hidden');
     modalEl.classList.add('modal__container--is-hidden');
-    // bodyEl.classList.remove('scroll-lock');
     window.removeEventListener('keydown', escClick);
     orderBtnEl.blur();
 };

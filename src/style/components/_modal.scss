@@ -1,29 +1,27 @@
 .modal__backdrop {
-    display: block;
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        @include glass;
-        visibility: visible;
-        opacity: 1;
-        pointer-events: auto;
-        transition: opacity 250ms $animate, visibility 250ms $animate;
-    
-        &.modal__backdrop--is-hidden {
-            visibility: hidden;
-            opacity: 0;
-            pointer-events: none;
-        }
+    @include flex(center, center);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    @include glass;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 250ms $animate, visibility 250ms $animate;
+
+    &.modal__backdrop--is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 .modal__container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    position: relative;
+    transform: scale(1);
     padding: 45px 30px;
     width: calc(100% - 30px);
     max-width: 360px;
@@ -33,7 +31,7 @@
     box-shadow: $cardShadow;
 
     &.modal__container--is-hidden {
-        transform: translate(-50%, -50%) scale(0.7);
+        transform: scale(0.7);
     }
 }
 

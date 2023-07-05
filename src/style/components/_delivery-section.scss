@@ -20,12 +20,10 @@
     gap: 15px;
     width: 100%;
     background-color: #EDEDED;
-    padding: 15px;
+    padding: 30px;
     border-radius: 4px;
 
-    @include min768 {
-        padding: 30px;
-        
+    @include min768 {        
         width: calc((100% - 30px) / 2);
     }
 
