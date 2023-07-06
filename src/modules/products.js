@@ -1,11 +1,52 @@
-import suluguniImg from '../img/suluguni-01.jpg';
-import burrataImg from '../img/burrata-01.jpg';
-import parmexzanImg from '../img/parmezan-01.jpg';
-import tvorogImg from '../img/tvorog-01.jpg';
-import vershkyImg from '../img/vershky-01.jpg';
-import molokoImg from '../img/moloko-01.jpg';
+import smetanaImg from '../img/smetana.jpg';
+import rikotaImg from '../img/rikota.jpg';
+import brynzaBalkanskaImg from '../img/brynza-balkanska.jpg';
+import brynzaKarpatskaImg from '../img/brynza-karpatska.jpg';
+import haloumiImg from '../img/haloumi.jpg';
+import suluguniImg from '../img/suluguni.jpg';
+import burrataImg from '../img/burrata.jpg';
+import mozzarellaImg from '../img/mozzarella.jpg';
+import strachatellaImg from '../img/strachatella.jpg';
+import jugasImg from '../img/jugas-stamp.jpg';
+import edamImg from '../img/edam-stamp.jpg';
+import gaudaImg from '../img/gauda-stamp.jpg';
 
 export const products = [
+    {
+        name: 'Сметана',
+        image: smetanaImg,
+        price: '95.00грн.',
+        weight: '0.5л',
+    },
+
+    {
+        name: 'Рікота',
+        image: rikotaImg,
+        price: '27.00грн.',
+        weight: '100гр',
+    },
+
+    {
+        name: 'Бринза Балканська',
+        image: brynzaBalkanskaImg,
+        price: '32.00грн.',
+        weight: '100гр',
+    },
+
+    {
+        name: 'Бринза Карпатська',
+        image: brynzaKarpatskaImg,
+        price: '32.00грн.',
+        weight: '100гр',
+    },
+
+    {
+        name: 'Халумі',
+        image: haloumiImg,
+        price: '42.00грн.',
+        weight: '100гр',
+    },
+
     {
         name: 'Сулугуні',
         image: suluguniImg,
@@ -21,30 +62,37 @@ export const products = [
     },
 
     {
-        name: 'Пармезан',
-        image: parmexzanImg,
-        price: '95.00грн.',
+        name: 'Моцарела',
+        image: mozzarellaImg,
+        price: '52.00грн.',
         weight: '100гр',
     },
 
     {
-        name: 'Кисломолочний сир',
-        image: tvorogImg,
-        price: '45.00грн.',
+        name: 'Страчателла',
+        image: strachatellaImg,
+        price: '49.00грн.',
         weight: '100гр',
     },
 
     {
-        name: 'Вершки',
-        image: vershkyImg,
-        price: '55грн.',
+        name: 'Джюгас',
+        image: jugasImg,
+        price: 'Незабаром',
         weight: '100гр',
     },
 
     {
-        name: 'Молоко',
-        image: molokoImg,
-        price: '70грн.',
-        weight: '1л',
+        name: 'Едам',
+        image: edamImg,
+        price: 'Незабаром',
+        weight: '100гр',
+    },
+
+    {
+        name: 'Гауда',
+        image: gaudaImg,
+        price: 'Незабаром',
+        weight: '100гр',
     },
 ];

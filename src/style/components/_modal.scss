@@ -1,7 +1,7 @@
 .modal__backdrop {
     @include flex(center, center);
     position: fixed;
-    z-index: 100;
+    z-index: 300;
     top: 0;
     left: 0;
     width: 100vw;
@@ -35,9 +35,23 @@
     }
 }
 
-.modal__text {
+.modal__text,
+.modal__phone-link {
+    display: block;
     @include font(18px, null);
     margin-bottom: 30px;
+    text-align: center;
+}
+
+.modal__phone-link {
+    font-weight: 500;
+    color: $primaryTextColor;
+    transition: color 250ms $animate;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
 }
 
 .modal__messengers-list {
