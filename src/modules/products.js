@@ -58,7 +58,7 @@ export const products = [
         name: 'Буррата',
         image: burrataImg,
         price: '135.00грн.',
-        weight: '100гр',
+        weight: '1шт',
     },
 
     {
