@@ -1,10 +1,5 @@
-import '@fontsource-variable/montserrat';
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
 import './index.html';
 import './index.scss';
 import './modules/mobile-menu';
 import './modules/modal';
-import './modules/products-render';
+import './modules/delivery-accordion';

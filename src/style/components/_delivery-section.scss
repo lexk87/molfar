@@ -1,40 +1,126 @@
+// .delivery__list {
+//     @include flex(null, null, column);
+//     gap: 10px;
+
+//     @include min480 {
+//         gap: 30px;
+//     }
+
+//     // @include min768 {
+//     //     @include flex(null, null, row);
+//     // }
+
+//     @include min1200 {
+//         @include flex(null, null, row);
+//         gap: 50px;
+//     }
+// }
+
+// .delivery__item {
+//     @include flex(null, null, column);
+//     gap: 15px;
+//     width: 100%;
+//     background-color: #EDEDED;
+//     padding: 30px;
+//     border-radius: 4px;
+
+//     // @include min768 {        
+//     //     width: calc((100% - 30px) / 2);
+//     // }
+
+//     @include min1200 {
+//         width: calc((100% - 100px) / 3);
+//     }
+// }
+
+// .delivery__subheading {
+//     @include font(16px, 700);
+    
+//     @include min768 {
+//         @include font(18px, null);
+//     }
+
+//     @include min1200 {
+//         @include font(21px, null);
+//     }
+// }
+
+// .delivery__text,
+// .delivery__text-list {
+//     @include font(16px, 300);
+
+//     @include min768 {
+//         @include font(18px, null);
+//     }
+
+//     @include min1200 {
+//         @include font(21px, null);
+//     }
+// }
+
+// .delivery__text-list {
+//     @include flex(null, null, column);
+//     gap: 5px;
+// }
+
+@import "bourbon";
+
 .delivery__list {
     @include flex(null, null, column);
     gap: 10px;
+    width: 100%;
+    margin: 0 auto;
 
-    @include min480 {
+    @include min768 {
         gap: 30px;
     }
 
-    // @include min768 {
-    //     @include flex(null, null, row);
-    // }
-
     @include min1200 {
-        @include flex(null, null, row);
         gap: 50px;
+        width: 738px;
     }
 }
 
 .delivery__item {
-    @include flex(null, null, column);
-    gap: 15px;
-    width: 100%;
-    background-color: #EDEDED;
-    padding: 30px;
+    background-color: aqua;
+    padding: 15px;
     border-radius: 4px;
 
-    // @include min768 {        
-    //     width: calc((100% - 30px) / 2);
-    // }
-
-    @include min1200 {
-        width: calc((100% - 100px) / 3);
+    @include min768 {
+        padding: 30px;
     }
 }
 
 .delivery__subheading {
     @include font(16px, 700);
+    // padding-bottom: 15px;
+    
+    @include min768 {
+        @include font(18px, null);
+        padding-bottom: 30px;
+    }
+
+    @include min1200 {
+        @include font(21px, null);
+    }
+}
+
+.delivery__content {
+    overflow: hidden;
+    max-height: 1000px;
+    transition: max-height 300ms $animate;
+
+    &.delivery__content--is-hidden {
+        max-height: 0;
+    }
+}
+
+.delivery__text {
+    position: relative;
+    @include font(16px, 300);
+    transform: scale(1);
+    opacity: 1;
+    transition: all 500ms $animate;
     
     @include min768 {
         @include font(18px, null);
@@ -43,22 +129,9 @@
     @include min1200 {
         @include font(21px, null);
     }
-}
 
-.delivery__text,
-.delivery__text-list {
-    @include font(16px, 300);
-
-    @include min768 {
-        @include font(18px, null);
+    &.delivery__text--is-hidden {
+        transform: scale(0);
+        opacity: 0;
     }
-
-    @include min1200 {
-        @include font(21px, null);
-    }
-}
-
-.delivery__text-list {
-    @include flex(null, null, column);
-    gap: 5px;
 }

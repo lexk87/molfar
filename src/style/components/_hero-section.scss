@@ -35,7 +35,7 @@
     left: 5%;
     transform: translateY(-50%);
     @include flex(null, null, column);
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
     @include font(20px, 700);
 
     @include min480 {
