@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <meta property="og:image" content="./img/og-logo.jpg">
+    <meta property="og:site_name" content="Мольфар">
+    <meta property="og:title" content="molfar.in">
+    <meta property="og:description" content="Сири власного виробництва і не тільки">
+    <meta property="og:url" content="https://molfar.in">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -533,74 +538,86 @@
         </section>
 
         <!-- Секція оплата і доставка -->
-        <!-- <section class="section">
-            <div class="container">
-                <h2 class="section__title">ОПЛАТА І ДОСТАВКА</h2>
-                <ul class="delivery__list">
-                    <li class="delivery__item">
-                        <h3 class="delivery__subheading">Як замовити?</h3>
-                        <p class="delivery__text">Поки ми доробляємо наш інтернет магазин, замовлення можна зробити 2 способами: зателефонувати до нас, або написати у
-                        зручний для вас месенджер. Для цього натисніть кнопку "Замовити" та оберіть зручний месенджер. Ми не використовуємо
-                        ботів, то ж ви точно будете спілкуватися з живою людиною, яка відповість на всі ваші питання і допоможе зробити найбільш
-                        оптимальний вибір.</p>
-                    </li>
-                    <li class="delivery__item">
-                        <h3 class="delivery__subheading">Як оплатити?</h3>
-                        <p class="delivery__text">Ми дуже любимо нові технології, тому основна форма оплати за нашу продукцію - банківська карта. Після того, як ви
-                        визначилися скільки і чого вам треба, а ми це все зважили і запакували, ми відправимо вам посилання для оплати. Варіанти
-                        оплати:</p>
-                        <ul class="delivery__text-list">
-                            <li class="delivery__text-item">1. Гаманцем Apple Pay</li>
-                            <li class="delivery__text-item">2. Гаманцем Google Pay</li>
-                            <li class="delivery__text-item">3. Через застосунок Monobank</li>
-                            <li class="delivery__text-item">4. Ручне введення реквізитів картки</li>
-                        </ul>
-                    </li>
-                    <li class="delivery__item">
-                        <h3 class="delivery__subheading">Як отримати?</h3>
-                        <ul class="delivery__text-list">
-                            <li class="delivery__text-item">1. Ви можете завітати до нас на виробництво, за адресою: Львівська область, Яворівський район, с.Рокитне, вул. Зелена 3.
-                            Заберете свою покупку і навіть зможете позаглядати, як вона робиться.</li>
-                            <li class="delivery__text-item">2. Якщо ви живете в радусі 15 км від нас, доставку буде робити наш кур'єр. Зазвичай термін очікування не перевищує 2-х
-                            днів.</li>
-                            <li class="delivery__text-item">3. Якщо ви живете від нас далеченько, залюбки відправимо Вам замовлення Новою Поштою.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section> -->
-
         <section class="section">
             <div class="container">
                 <h2 class="section__title">ОПЛАТА І ДОСТАВКА</h2>
                 <ul class="delivery__list">
+
+                    <!-- Delivery item -->
                     <li class="delivery__item">
-                        <h3 class="delivery__subheading">Як замовити?</h3>
+                        <div class="delivery__subheading-wrapper">
+                            <h3 class="delivery__subheading">Як замовити?</h3>
+                            <svg class="delivery__accordion-arrow">
+                                <use href="./img/accordion-arrow.svg#accordion-arrow"></use>
+                            </svg>
+                        </div>
+                
                         <div class="delivery__content delivery__content--is-hidden">
                             <p class="delivery__text delivery__text--is-hidden">Поки ми доробляємо наш інтернет магазин, замовлення можна зробити 2 способами: зателефонувати до нас, або написати у зручний для вас месенджер. Для цього натисніть кнопку "Замовити" та оберіть зручний месенджер. Ми не використовуємо ботів, то ж ви точно будете спілкуватися з живою людиною, яка відповість на всі ваші питання і допоможе зробити найбільш оптимальний вибір.</p>
                         </div>
                     </li>
+
+                    <!-- Delivery item -->
                     <li class="delivery__item">
-                        <h3 class="delivery__subheading">Як оплатити?</h3>
-                        <p class="delivery__text">Ми дуже любимо нові технології, тому основна форма оплати за нашу продукцію - банківська карта. Після того, як ви
-                        визначилися скільки і чого вам треба, а ми це все зважили і запакували, ми відправимо вам посилання для оплати. Варіанти
-                        оплати:</p>
-                        <ul class="delivery__text-list">
-                            <li class="delivery__text-item">1. Гаманцем Apple Pay</li>
-                            <li class="delivery__text-item">2. Гаманцем Google Pay</li>
-                            <li class="delivery__text-item">3. Через застосунок Monobank</li>
-                            <li class="delivery__text-item">4. Ручне введення реквізитів картки</li>
-                        </ul>
+                        <div class="delivery__subheading-wrapper">
+                            <h3 class="delivery__subheading">Як оплатити?</h3>
+                            <svg class="delivery__accordion-arrow">
+                                <use href="./img/accordion-arrow.svg#accordion-arrow"></use>
+                            </svg>
+                        </div>
+
+                        <div class="delivery__content delivery__content--is-hidden">
+                            <div class="delivery__text delivery__text--is-hidden">
+                                <p class="delivery__text--inner-text">Ми дуже любимо нові технології, тому основна форма оплати за нашу продукцію - банківська карта. Після того, як ви
+                                визначилися скільки і чого вам треба, а ми це все зважили і запакували, ми відправимо вам посилання для оплати.</p>
+                                <p class="delivery__text--inner-text delivery__bold">Варіанти оплати:</p>
+                                <ul class="delivery__text-list">
+                                    <li class="delivery__text-item">
+                                        1. Гаманцем Apple Pay
+                                    </li>
+                                    <li class="delivery__text-item">
+                                        2. Гаманцем Google Pay
+                                    </li>
+                                    <li class="delivery__text-item">
+                                        3. Через застосунок Monobank
+                                    </li>
+                                    <li class="delivery__text-item">
+                                        4. Ручне введення реквізитів картки
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
+
+                    <!-- Delivery item -->
                     <li class="delivery__item">
-                        <h3 class="delivery__subheading">Як отримати?</h3>
-                        <ul class="delivery__text-list">
-                            <li class="delivery__text-item">1. Ви можете завітати до нас на виробництво, за адресою: Львівська область, Яворівський район, с.Рокитне, вул. Зелена 3.
-                            Заберете свою покупку і навіть зможете позаглядати, як вона робиться.</li>
-                            <li class="delivery__text-item">2. Якщо ви живете в радусі 15 км від нас, доставку буде робити наш кур'єр. Зазвичай термін очікування не перевищує 2-х
-                            днів.</li>
-                            <li class="delivery__text-item">3. Якщо ви живете від нас далеченько, залюбки відправимо Вам замовлення Новою Поштою.</li>
-                        </ul>
+                        <div class="delivery__subheading-wrapper">
+                            <h3 class="delivery__subheading">Як отримати?</h3>
+                            <svg class="delivery__accordion-arrow">
+                                <use href="./img/accordion-arrow.svg#accordion-arrow"></use>
+                            </svg>
+                        </div>
+
+                        <div class="delivery__content delivery__content--is-hidden">
+                            <div class="delivery__text delivery__text--is-hidden">
+                                <ul class="delivery__text-list">
+                                    <li class="delivery__text-item">
+                                        1. Ви можете завітати до нас на виробництво, за адресою: Львівська область,
+                                        Яворівський район, с.Рокитне, вул. Зелена 3.
+                                        Заберете свою покупку і навіть зможете позаглядати, як вона робиться.
+                                    </li>
+                                    <li class="delivery__text-item">
+                                        2. Якщо ви живете в радусі 15 км від нас, доставку буде робити наш кур'єр. Зазвичай
+                                        термін очікування не перевищує 2-х
+                                        днів.
+                                    </li>
+                                    <li class="delivery__text-item">
+                                        3. Якщо ви живете від нас далеченько, залюбки відправимо Вам замовлення Новою
+                                        Поштою.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>

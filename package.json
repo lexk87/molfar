@@ -40,7 +40,6 @@
         "webpack-dev-server": "^4.13.3"
     },
     "dependencies": {
-        "bourbon": "^7.3.0",
         "normalize.css": "^8.0.1"
     }
 }
